@@ -1,0 +1,10 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<body>
+	
+	<ul>
+    <li th:each="file : ${titles}">
+        	<img alt="sample" th:src="*{'data:image/png;base64,'+image}" width="200"/>
+    </li>
+</ul>
+</body>
+</html>
